@@ -1,0 +1,58 @@
+# ====================================================================
+# KALI LINUX & CYBERSECURITY LABORATORY .GITIGNORE
+# Customized for Networkwalks Internship - Week 2
+# Created: Aug 22, 2026
+# ====================================================================
+
+# --- OS & Environment Trash ---
+.desktop
+.directory
+.Trash-*
+.nfs*
+.DS_Store
+Thumbs.db
+
+# --- Terminal, Shell & History Logs (Crucial for Privacy) ---
+.bash_history
+.zsh_history
+.bash_log
+.zsh_log
+.history
+.wget-hsts
+.curl_hsts
+*.log
+
+# --- Packet Captures & Network Scans (Prevents leaking live network data) ---
+*.pcap
+*.pcapng
+*.cap
+*.gns3
+*.net
+*.xml
+*.json
+!README.md # Keep documentation intact
+
+# --- Python / Tool Specific Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Text Editors & Temporary Swap Files ---
+*.swp
+*.swo
+*~
+.viminfo
+.vscode/
+.idea/
+
+# --- Credentials & API Configuration Keys ---
+*api*.yaml
+*api*.json
+*key*.yaml
+*key*.json
+secrets/
+credentials/
+config.local.yaml
+proxies.yaml
